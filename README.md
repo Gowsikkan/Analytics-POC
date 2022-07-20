@@ -41,6 +41,7 @@ evaluation of data through analytical and logical reasoning to lead to some sort
 
   - Analysis is something about what has happened in the past. So we will explain why that has happened? We will explain how it has happened? 
   - Analytics is studying about what will happen in future and with the help of analytics. We can predict explore possible potential future events.
+  - Therefore Analysis ≠ Analytics
 
 ## Classification of data analytics
   - Descriptive analytics
