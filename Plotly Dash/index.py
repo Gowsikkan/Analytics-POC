@@ -32,7 +32,7 @@ df['  Sales ']=df['  Sales '].str.replace('$','')
 df['  Sales ']=df['  Sales '].str.replace(',','')
 
 
-#Changing Datatype
+#Changing Datatypes
 df['  Sales '] = df['  Sales '].astype('float')
 df[' Manufacturing Price '] = df[' Manufacturing Price '].astype('float')
 df[' Sale Price '] = df[' Sale Price '].astype('float')
