@@ -201,10 +201,7 @@ class App extends Component {
           <YAxis type="number" dataKey="y" name="weight" unit="kg" />
           <Tooltip cursor={{ strokeDasharray: '3 3' }} />
           <Scatter name="A school" data={dataas} fill="#8884d8" />
-        </ScatterChart>
-
-        
-
+        </ScatterChart> 
       </div>
     );
   }
