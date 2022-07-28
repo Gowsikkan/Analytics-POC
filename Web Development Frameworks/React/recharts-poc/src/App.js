@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { RadarChart,PolarGrid, PolarAngleAxis, Radar, PolarRadiusAxis, Pie,PieChart, Scatter,ScatterChart, AreaChart, ComposedChart,Tooltip,Legend,Area, Bar,BarChart, ResponsiveContainer,LineChart, Line, XAxis, YAxis, CartesianGrid} from 'recharts';
-import Welcome from './components/Welcome';
+import { LineChart, RadarChart,PolarGrid, PolarAngleAxis, Radar, PolarRadiusAxis, Pie,PieChart, Scatter,ScatterChart, AreaChart, ComposedChart,Tooltip,Legend,Area, Bar,BarChart, Line, XAxis, YAxis, CartesianGrid} from 'recharts';
+
 const data = [
   {
     name: 'Page A',
@@ -107,7 +107,25 @@ class App extends Component {
       <div className='App' align='center'>
 
         <h1>Demo Charts</h1>
-        <Welcome><h1>Hello</h1></Welcome>
+        <LineChart
+          width={500}
+          height={300}
+          data={data}
+          margin={{
+            top: 5,
+            right: 30,
+            left: 20,
+            bottom: 5,
+          }}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="name" />
+          <YAxis />
+          <Tooltip />
+          <Legend />
+          <Line type="monotone" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }} />
+          <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+        </LineChart>
      
       <BarChart width={500} height={500} data={data}>
           <Bar dataKey="uv" fill="#8884d8" />
@@ -138,21 +156,25 @@ class App extends Component {
       <Line type="monotone" dataKey="uv" stroke="#ff7300" />
       </ComposedChart>
       
-          <AreaChart width={500} height={500} data={data} align='left'
-        margin={{
-        top: 20,
-        right: 20,
-        left: 20,
-        bottom: 20,
-        }}
-      >
-        <CartesianGrid strokeDasharray="3 3" />
-      <XAxis dataKey="name" />
-      <YAxis />
-      <Tooltip />
-      <Area type="monotone" dataKey="uv" stroke="#8884d8" fill="#8884d8" />
-    </AreaChart>
-
+      <AreaChart width={800} height={500} data={data}
+  margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
+  <defs>
+    <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="5%" stopColor="#8884d8" stopOpacity={0.8}/>
+      <stop offset="95%" stopColor="#8884d8" stopOpacity={0}/>
+    </linearGradient>
+    <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="5%" stopColor="#82ca9d" stopOpacity={0.8}/>
+      <stop offset="95%" stopColor="#82ca9d" stopOpacity={0}/>
+    </linearGradient>
+  </defs>
+  <XAxis dataKey="name" />
+  <YAxis />
+  <CartesianGrid strokeDasharray="3 3" />
+  <Tooltip />
+  <Area type="monotone" dataKey="uv" stroke="#8884d8" fillOpacity={1} fill="url(#colorUv)" />
+  <Area type="monotone" dataKey="pv" stroke="#82ca9d" fillOpacity={1} fill="url(#colorPv)" />
+</AreaChart>
       <PieChart width={500} height={500}>
             <Pie dataKey="value" data={datas} fill="#8884d8" label />
           </PieChart>
