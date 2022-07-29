@@ -198,11 +198,11 @@ class App extends Component {
         >
           <CartesianGrid />
           <XAxis type="number" dataKey="x" name="stature" unit="cm" />
-          <YAxis type="number" dataKey="y" name="weight" unit="kg" />
+          <YAxis type="number"  dataKey="y" name="weight" unit="kg" />
           <Tooltip cursor={{ strokeDasharray: '3 3' }} />
           <Scatter name="A school" data={dataas} fill="#8884d8" />
         </ScatterChart> 
-      </div>
+      </div> 
     );
   }
 }
