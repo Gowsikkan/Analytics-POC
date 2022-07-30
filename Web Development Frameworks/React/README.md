@@ -10,10 +10,10 @@ React chart libraries, or React apps, are software development tools web develop
 - You can add hundreds of thousands of data points into your chart displays to show beautiful summaries of complex data.
 
 ## Top React chart Libraries
-- Recharts
+- [Recharts](https://recharts.org/en-US/)
 - [Charts.js](https://www.chartjs.org/)
-- Victory
-- Nivo
+- [Victory](https://formidable.com/)
+- [Nivo](https://nivo.rocks/components/)
 - [React-Vis](https://uber.github.io/react-vis/)
 
 
@@ -55,3 +55,14 @@ Nivo, like many other React chart libraries, was built with React and D3 and pro
 - Support for multiple chart formats
 - Various templates and color options
 - Server-based rendering
+
+## React-Vis
+Created by Uber and built with React and D3, React-Vis is one of the easiest React charting libraries to get started with.If you’ve ever worked with React components, you will find it easy to work with the components provided by react-vis because they function in a similar way, with props, children, and callbacks.
+
+### Key features:
+- Straightforward on-site storybook
+- Both simple and advanced chart types
+- Clear and intuitive user interface
+- Shallow learning curve
+
+
