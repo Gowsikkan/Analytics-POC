@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { LineChart, RadarChart,PolarGrid, PolarAngleAxis, Radar, PolarRadiusAxis, Pie,PieChart, Scatter,ScatterChart, AreaChart, ComposedChart,Tooltip,Legend,Area, Bar,BarChart, Line, XAxis, YAxis, CartesianGrid} from 'recharts';
 import Victory from './components/Victory';
+import Charts from './components/Charts';
 const data = [
   {
     name: 'Page A',
@@ -106,6 +107,7 @@ class App extends Component {
     return (
       <div className='App' align='center'>
         <Victory />
+        <Charts />
         <h1>Demo Charts</h1>
         <LineChart
           width={500}
