@@ -66,12 +66,5 @@ Created by Uber and built with React and D3, React-Vis is one of the easiest Rea
 - Shallow learning curve
 
 
-	      | React-Vis         |  Victory      | Recharts	        | Nivo	           | React-chartjs-2 |
-:---------:-------------------:---------------:---------------------:------------------:-----------------:
-Stars	  | 8.3K	          |  9.8K	      | 18K	                | 10.3K	           | 5.2K            |
-Downloads |	124L	          |  238L	      | 960L	            | 6L	           | 603L            |
-Built on  |	React &D3	      |  React &D3	  | React &D3	        | React &D3	       | Charts.js       |
-Support	  | SVG and Canvas	  |  SVG	      | SVG                 | SVG, HTML & Canva| HTML & Canvas   | 
-Animations| Not Customisable  |  Customisable | Not Customisable	| Best	           | Not Customisable|
-Docs	  | Not detailed	  |  Detailed Docs| Detailed Docs	    | Customisable docs| Not detailed    |  
-Examples  |	Showcase,Storybook|  In docs	  | In docs,Showcase	| In docs,Storybook| In docs,showcase|
+### Comparison Table
+!![WhatsApp Image 2022-08-02 at 12 01 05 AM (1)](https://user-images.githubusercontent.com/66643168/182219528-d7d13d3e-f0c0-4aa3-acbb-15c4fefa7036.jpeg)
