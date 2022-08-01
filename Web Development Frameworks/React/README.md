@@ -67,4 +67,4 @@ Created by Uber and built with React and D3, React-Vis is one of the easiest Rea
 
 
 ### Comparison Table
-!![WhatsApp Image 2022-08-02 at 12 01 05 AM (1)](https://user-images.githubusercontent.com/66643168/182219528-d7d13d3e-f0c0-4aa3-acbb-15c4fefa7036.jpeg)
+![WhatsApp Image 2022-08-02 at 12 01 05 AM (1)](https://user-images.githubusercontent.com/66643168/182219528-d7d13d3e-f0c0-4aa3-acbb-15c4fefa7036.jpeg)
