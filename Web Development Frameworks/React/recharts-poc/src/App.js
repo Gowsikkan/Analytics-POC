@@ -101,13 +101,19 @@ const dataas = [
   { x: 150, y: 400, z: 500 },
   { x: 110, y: 280, z: 200 },
 ];
+const datat = [
+  {quarter: 1, earnings: 13000},
+  {quarter: 2, earnings: 16500},
+  {quarter: 3, earnings: 14250},
+  {quarter: 4, earnings: 19000}
+];
 
 class App extends Component {
   render() {
     return (
       <div className='App' align='center'>
         <h1>Demo Charts</h1>
-        <Victory/>
+        <Victory data={datat}/>
         <Chart/>
         <LineChart
           width={500}

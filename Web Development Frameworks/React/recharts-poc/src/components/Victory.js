@@ -1,12 +1,6 @@
 import React, { Component } from 'react'
 import { VictoryBar, VictoryChart,VictoryAxis,VictoryScatter,VictoryTheme,VictoryErrorBar, VictoryBoxPlot, VictoryVoronoi} from 'victory';
 
-const data = [
-  {quarter: 1, earnings: 13000},
-  {quarter: 2, earnings: 16500},
-  {quarter: 3, earnings: 14250},
-  {quarter: 4, earnings: 19000}
-];
 
 class Victory extends Component {
   render() {
@@ -22,7 +16,7 @@ class Victory extends Component {
         tickFormat={(x) => (`$${x / 1000}k`)}
       />
       <VictoryBar
-        data={data}
+        data={datat}
         x="quarter"
         y="earnings"
       />
