@@ -1,35 +1,59 @@
-import { Line } from "react-chartjs-2";
-import React, { Component } from 'react'
-
-
-const data = {
-    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
-    datasets: [
-      {
-        label: "First dataset",
-        data: [33, 53, 85, 41, 44, 65],
-        fill: true,
-        backgroundColor: "rgba(75,192,192,0.2)",
-        borderColor: "rgba(75,192,192,1)"
-      },
-      {
-        label: "Second dataset",
-        data: [33, 25, 35, 51, 54, 76],
-        fill: false,
-        borderColor: "#742774"
-      }
-    ]
-  };
+import React from 'react'
+import { LineChart, RadarChart,PolarGrid, PolarAngleAxis, Radar, PolarRadiusAxis, Pie,PieChart, Scatter,ScatterChart, AreaChart, ComposedChart,Tooltip,Legend,Area, Bar,BarChart, Line, XAxis, YAxis, CartesianGrid} from 'recharts';
   
 
-class Chart extends Component {
-  render() {
-    return (
-      <div className="Chart">
-          <Line data={data} />
-    </div>
-    )
-  }
+const Chart=(props)=> {
+
+  const groups = props.name.groupBy('Name');
+
+console.log(groups);
+
+  return(
+    <div>
+    <LineChart width={900} height={500} data={props.name}margin={{
+            top: 5,
+            right: 30,
+            left: 20,
+            bottom: 5,
+          }}>
+    <CartesianGrid strokeDasharray="3 3" />
+    <XAxis dataKey="Name" />
+    <YAxis />
+    <Tooltip />
+    <Line dataKey="Displacement" stroke="violet" strokeWidth={0.9} />
+    <Line dataKey="Horsepower" stroke="blue" strokeWidth={0.9}/>
+    
+    
+  </LineChart>
+
+  <RadarChart cx="50%" cy="50%" outerRadius="80%" data={groups}>
+          <PolarGrid />
+          <PolarAngleAxis dataKey="Year" />
+          <PolarRadiusAxis />
+          <Radar dataKey="Horsepower" stroke="#8884d8" fill="#8884d8" fillOpacity={0.6} />
+        </RadarChart>
+
+        <AreaChart
+          width={500}
+          height={400}
+          data={props.name}
+          margin={{
+            top: 10,
+            right: 30,
+            left: 0,
+            bottom: 0,
+          }}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="Name" />
+          <YAxis />
+          <Tooltip />
+          <Area type="monotone" dataKey="Horsepower" stroke="#8884d8" fill="#8884d8" />
+        </AreaChart>
+ 
+</div>
+)
 }
+
 
 export default Chart
