@@ -9,8 +9,7 @@ class App extends Component {
   render(){
   return (
     <div className="App">
-      <Chart name={this.state.mydata}/>
-      
+      <Chart name={this.state.mydata}/>  
     </div>
   );
 }

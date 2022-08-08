@@ -4,12 +4,12 @@ import { LineChart, RadarChart,PolarGrid, PolarAngleAxis, Radar, PolarRadiusAxis
 
 const Chart=(props)=> {
 
-  const groups = props.name.groupBy('Name');
+  const groups = props.name;
 
 console.log(groups);
 
   return(
-    <div>
+    <div align="center">
     <LineChart width={900} height={500} data={props.name}margin={{
             top: 5,
             right: 30,
