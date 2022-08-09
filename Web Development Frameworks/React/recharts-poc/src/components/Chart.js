@@ -2,37 +2,31 @@ import React from 'react'
 import { LineChart, RadarChart,PolarGrid, PolarAngleAxis, Radar, PolarRadiusAxis, Pie,PieChart, Scatter,ScatterChart, AreaChart, ComposedChart,Tooltip,Legend,Area, Bar,BarChart, Line, XAxis, YAxis, CartesianGrid} from 'recharts';
   
 
+
 const Chart=(props)=> {
-
-  const groups = props.name;
-
-console.log(groups);
-
   return(
-    <div align="center">
-    <LineChart width={900} height={500} data={props.name}margin={{
+    <div align='center'>
+
+     <LineChart
+          width={500}
+          height={300}
+          data={props.name}
+          margin={{
             top: 5,
             right: 30,
             left: 20,
             bottom: 5,
-          }}>
-    <CartesianGrid strokeDasharray="3 3" />
-    <XAxis dataKey="Name" />
-    <YAxis />
-    <Tooltip />
-    <Line dataKey="Displacement" stroke="violet" strokeWidth={0.9} />
-    <Line dataKey="Horsepower" stroke="blue" strokeWidth={0.9}/>
-    
-    
-  </LineChart>
+          }}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey={props.x} />
+          <YAxis />
+          <Tooltip />
+          <Legend />
+          <Line type="monotone" dataKey={props.y} stroke="#8884d8" activeDot={{ r: 8 }} />
+        </LineChart>
 
-  <RadarChart cx="50%" cy="50%" outerRadius="80%" data={groups}>
-          <PolarGrid />
-          <PolarAngleAxis dataKey="Year" />
-          <PolarRadiusAxis />
-          <Radar dataKey="Horsepower" stroke="#8884d8" fill="#8884d8" fillOpacity={0.6} />
-        </RadarChart>
-
+        <h1>hsdh</h1>
         <AreaChart
           width={500}
           height={400}
@@ -50,10 +44,13 @@ console.log(groups);
           <Tooltip />
           <Area type="monotone" dataKey="Horsepower" stroke="#8884d8" fill="#8884d8" />
         </AreaChart>
- 
+
+        
 </div>
 )
 }
 
-
 export default Chart
+
+
+
