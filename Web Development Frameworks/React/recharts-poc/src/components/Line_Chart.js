@@ -2,7 +2,7 @@ import React from 'react'
 import { LineChart, RadarChart,PolarGrid, PolarAngleAxis, Radar, PolarRadiusAxis, Pie,PieChart, Scatter,ScatterChart, AreaChart, ComposedChart,Tooltip,Legend,Area, Bar,BarChart, Line, XAxis, YAxis, CartesianGrid} from 'recharts';
   
 
-const LineChart=(props)=> {
+const Line_Chart=(props)=> {
   return(
     <div align='center'>
 
@@ -29,7 +29,7 @@ const LineChart=(props)=> {
 )
 }
 
-export default LineChart
+export default Line_Chart
 
 
 

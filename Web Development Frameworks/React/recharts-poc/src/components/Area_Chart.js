@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
+import { LineChart, RadarChart,PolarGrid, PolarAngleAxis, Radar, PolarRadiusAxis, Pie,PieChart, Scatter,ScatterChart, AreaChart, ComposedChart,Tooltip,Legend,Area, Bar,BarChart, Line, XAxis, YAxis, CartesianGrid} from 'recharts';
 
-const AreaChart=(props)=>{
+
+const Area_Chart=(props)=>{
 return(
       <div>
         <AreaChart
@@ -24,4 +26,4 @@ return(
       </div>
     )
 }
-export default AreaChart
+export default Area_Chart

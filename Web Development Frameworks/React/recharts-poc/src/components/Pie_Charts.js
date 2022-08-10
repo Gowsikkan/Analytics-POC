@@ -1,6 +1,8 @@
 import React from 'react'
+import { LineChart, RadarChart,PolarGrid, PolarAngleAxis, Radar, PolarRadiusAxis, Pie,PieChart, Scatter,ScatterChart, AreaChart, ComposedChart,Tooltip,Legend,Area, Bar,BarChart, Line, XAxis, YAxis, CartesianGrid} from 'recharts';
 
-const PieChart=(props)=> {
+
+const Pie_Charts=(props)=> {
   return (
     <div>
         <PieChart width={400} height={400}>
@@ -19,3 +21,4 @@ const PieChart=(props)=> {
     </div>
   )
 }
+export default Pie_Charts

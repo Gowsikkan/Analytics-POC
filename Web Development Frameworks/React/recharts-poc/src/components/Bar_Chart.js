@@ -1,6 +1,8 @@
 import React from 'react'
+import { LineChart, ReferenceLine,Brush, RadarChart,PolarGrid, PolarAngleAxis, Radar, PolarRadiusAxis, Pie,PieChart, Scatter,ScatterChart, AreaChart, ComposedChart,Tooltip,Legend,Area, Bar,BarChart, Line, XAxis, YAxis, CartesianGrid} from 'recharts';
 
-const BarChart=(props)=> {
+
+const Bar_Chart=(props)=> {
   return (
     <div>
         <BarChart
@@ -22,10 +24,9 @@ const BarChart=(props)=> {
           <ReferenceLine y={0} stroke="#000" />
           <Brush dataKey={props.x} height={30} stroke="#8884d8" />
           <Bar dataKey={props.y} fill="#8884d8" />
-          <Bar dataKey={props.y} fill="#82ca9d" />
         </BarChart>
     </div>
   )
 }
 
-export default BarChart
+export default Bar_Chart

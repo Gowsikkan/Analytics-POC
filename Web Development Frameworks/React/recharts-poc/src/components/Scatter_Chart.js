@@ -1,6 +1,8 @@
 import React from 'react'
+import { LineChart, RadarChart,PolarGrid, PolarAngleAxis, Radar, PolarRadiusAxis, Pie,PieChart, Scatter,ScatterChart, AreaChart, ComposedChart,Tooltip,Legend,Area, Bar,BarChart, Line, XAxis, YAxis, CartesianGrid} from 'recharts';
 
-const ScatterChart=(props)=> {
+
+const Scatter_Chart=(props)=> {
   return (
     <div>
 <ScatterChart
@@ -22,3 +24,4 @@ const ScatterChart=(props)=> {
         </div>
   )
 }
+export default Scatter_Chart
