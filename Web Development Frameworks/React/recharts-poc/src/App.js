@@ -15,7 +15,7 @@ class App extends Component {
     return (
 
     <div className="App" align="center">
-      <Line_Chart data={this.state.mydata} x="Name" y="Displacement"/>
+       <Line_Chart data={this.state.mydata} x="Name" y="Displacement"/>
       <Area_Chart data={this.state.mydata} x="Origin" y="Horsepower"/>
       <Bar_Chart data={this.state.mydata} x="Name" y="Weight_in_lbs"/>
       <Composed_Chart data={this.state.mydata} x="Year" y1="Displacement" y2="Horsepower" y3="Accleratiom" y4="Weight_in_lbs"/>

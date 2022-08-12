@@ -1,11 +1,12 @@
 import React from 'react'
-import { LineChart, RadarChart,PolarGrid, PolarAngleAxis, Radar, PolarRadiusAxis, Pie,PieChart, Scatter,ScatterChart, AreaChart, ComposedChart,Tooltip,Legend,Area, Bar,BarChart, Line, XAxis, YAxis, CartesianGrid} from 'recharts';
+import { LineChart, Tooltip,Legend,Line, XAxis, YAxis, CartesianGrid} from 'recharts';
   
+const centerX=900;
+const centerY=900;
 
 const Line_Chart=(props)=> {
   return(
-    <div align='center'>
-
+      <g transform={`translate(${centerX},${centerY})`}>
      <LineChart
           width={500}
           height={300}
@@ -24,8 +25,7 @@ const Line_Chart=(props)=> {
           <Legend />
           <Line type="monotone" dataKey={props.y} stroke="#8884d8" activeDot={{ r: 8 }} />
         </LineChart>
-        
-</div>
+        </g>
 )
 }
 
