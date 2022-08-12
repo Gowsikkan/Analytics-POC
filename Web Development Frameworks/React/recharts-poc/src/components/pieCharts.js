@@ -5,7 +5,9 @@ import { Pie,PieChart, Tooltip} from 'recharts';
 const pieCharts=(props)=> {
   return (
     <div>
-        <PieChart width={400} height={400} >
+        <PieChart 
+            width={props.width}
+            height={props.height} >
           <Pie
             dataKey={props.x}
             isAnimationActive={false}

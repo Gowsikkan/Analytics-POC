@@ -5,8 +5,8 @@ import { LineChart, Tooltip,Legend,Line, XAxis, YAxis} from 'recharts';
 const lineChart=(props)=> {
   return(
      <LineChart
-          width={500}
-          height={300}
+          width={props.width}
+          height={props.height}
           data={props.data}
           margin={{ top: 1, right: 30, left: 20, bottom: 5 }}
         >

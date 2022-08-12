@@ -5,8 +5,8 @@ const composedChart=(props)=> {
   return (
     <div>
         <ComposedChart
-          width={500}
-          height={400}
+          width={props.width}
+          height={props.height}
           data={props.data}
           margin={{
             top: 20,

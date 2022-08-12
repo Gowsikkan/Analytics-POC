@@ -6,8 +6,8 @@ const barChart=(props)=> {
   return (
     <div>
         <BarChart
-          width={500}
-          height={300}
+          width={props.width}
+          height={props.height}
           data={props.data}
           margin={{
             top: 5,

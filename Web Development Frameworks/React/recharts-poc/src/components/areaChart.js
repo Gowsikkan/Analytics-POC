@@ -6,8 +6,8 @@ const areaChart=(props)=>{
 return(
       <div>
         <AreaChart
-          width={500}
-          height={400}
+          width={props.width}
+          height={props.height}
           data={props.data}
           margin={{
             top: 10,

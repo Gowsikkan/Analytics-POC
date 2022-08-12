@@ -6,9 +6,9 @@ const scatterChart=(props)=> {
   return (
     <div>
 <ScatterChart
-          width={400}
-          height={400}
-          margin={{
+            width={props.width}
+            height={props.height}
+            margin={{
             top: 20,
             right: 20,
             bottom: 20,
