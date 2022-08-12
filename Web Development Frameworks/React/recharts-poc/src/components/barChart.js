@@ -2,7 +2,7 @@ import React from 'react'
 import { ReferenceLine,Brush, Tooltip,Legend,Bar,BarChart, XAxis, YAxis, CartesianGrid} from 'recharts';
 
 
-const Bar_Chart=(props)=> {
+const barChart=(props)=> {
   return (
     <div>
         <BarChart
@@ -29,4 +29,4 @@ const Bar_Chart=(props)=> {
   )
 }
 
-export default Bar_Chart
+export default barChart

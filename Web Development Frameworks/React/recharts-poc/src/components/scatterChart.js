@@ -2,7 +2,7 @@ import React from 'react'
 import {Scatter,ScatterChart,Tooltip,XAxis, YAxis, CartesianGrid} from 'recharts';
 
 
-const Scatter_Chart=(props)=> {
+const scatterChart=(props)=> {
   return (
     <div>
 <ScatterChart
@@ -24,4 +24,4 @@ const Scatter_Chart=(props)=> {
         </div>
   )
 }
-export default Scatter_Chart
+export default scatterChart

@@ -2,12 +2,13 @@ import React from 'react'
 import { LineChart, Tooltip,Legend,Line, XAxis, YAxis} from 'recharts';
   
 
-const Line_Chart=(props)=> {
+const lineChart=(props)=> {
   return(
      <LineChart
           width={500}
           height={300}
           data={props.data}
+          margin={{ top: 1, right: 30, left: 20, bottom: 5 }}
         >
           <XAxis dataKey={props.x} />
           <YAxis />
@@ -18,7 +19,7 @@ const Line_Chart=(props)=> {
 )
 }
 
-export default Line_Chart
+export default lineChart
 
 
 

@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import data from './components/cars.json';
-import Line_Chart from './components/Line_Chart';
-import Area_Chart  from './components/Area_Chart';
-import Bar_Chart from './components/Bar_Chart';
-import Pie_Charts from './components/Pie_Charts';
-import Scatter_Chart from './components/Scatter_Chart';
-import Composed_Chart from './components/Composed_Chart';
+import Line_Chart from './components/lineChart';
+import Area_Chart  from './components/areaChart';
+import Bar_Chart from './components/barChart';
+import Pie_Charts from './components/pieCharts';
+import Scatter_Chart from './components/scatterChart';
+import Composed_Chart from './components/composedChart';
 
 class App extends Component {
   state={
@@ -13,7 +13,8 @@ class App extends Component {
   }
   render(){
     return (
-    <div className="App" >
+
+    <div className="App" align="center">
       <Line_Chart data={this.state.mydata} x="Name" y="Displacement"/>
       <Area_Chart data={this.state.mydata} x="Origin" y="Horsepower"/>
       <Bar_Chart data={this.state.mydata} x="Name" y="Weight_in_lbs"/>

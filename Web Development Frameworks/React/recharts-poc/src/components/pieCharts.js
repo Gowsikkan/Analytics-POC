@@ -2,17 +2,18 @@ import React from 'react'
 import { Pie,PieChart, Tooltip} from 'recharts';
 
 
-const Pie_Charts=(props)=> {
+const pieCharts=(props)=> {
   return (
     <div>
-        <PieChart width={400} height={400}>
+        <PieChart width={400} height={400} >
           <Pie
             dataKey={props.x}
             isAnimationActive={false}
             data={props.data}
-            cx="50%"
-            cy="50%"
-            outerRadius={80}
+            cx={240} 
+            cy={150} 
+            innerRadius={10} 
+            outerRadius={120}
             fill="#8884d8"
             label
           />
@@ -21,4 +22,4 @@ const Pie_Charts=(props)=> {
     </div>
   )
 }
-export default Pie_Charts
+export default pieCharts

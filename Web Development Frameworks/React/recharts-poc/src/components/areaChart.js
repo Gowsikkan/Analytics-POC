@@ -2,7 +2,7 @@ import React from 'react'
 import {AreaChart,Tooltip,Area,XAxis, YAxis, CartesianGrid} from 'recharts';
 
 
-const Area_Chart=(props)=>{
+const areaChart=(props)=>{
 return(
       <div>
         <AreaChart
@@ -26,4 +26,4 @@ return(
       </div>
     )
 }
-export default Area_Chart
+export default areaChart

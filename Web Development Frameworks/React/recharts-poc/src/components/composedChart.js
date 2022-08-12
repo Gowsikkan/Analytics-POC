@@ -1,7 +1,7 @@
 import React from 'react'
 import { Scatter,ComposedChart,Tooltip,Legend,Area, Bar, Line, XAxis, YAxis, CartesianGrid} from 'recharts';
 
-const Composed_Chart=(props)=> {
+const composedChart=(props)=> {
   return (
     <div>
         <ComposedChart
@@ -30,4 +30,4 @@ const Composed_Chart=(props)=> {
   )
 }
 
-export default Composed_Chart
+export default composedChart
