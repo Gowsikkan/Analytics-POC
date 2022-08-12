@@ -1,5 +1,5 @@
 import React from 'react'
-import { LineChart, ReferenceLine,Brush, RadarChart,PolarGrid, PolarAngleAxis, Radar, PolarRadiusAxis, Pie,PieChart, Scatter,ScatterChart, AreaChart, ComposedChart,Tooltip,Legend,Area, Bar,BarChart, Line, XAxis, YAxis, CartesianGrid} from 'recharts';
+import { ReferenceLine,Brush, Tooltip,Legend,Bar,BarChart, XAxis, YAxis, CartesianGrid} from 'recharts';
 
 
 const Bar_Chart=(props)=> {

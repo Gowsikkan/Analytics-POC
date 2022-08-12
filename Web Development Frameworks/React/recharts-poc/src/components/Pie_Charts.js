@@ -1,5 +1,5 @@
 import React from 'react'
-import { LineChart, RadarChart,PolarGrid, PolarAngleAxis, Radar, PolarRadiusAxis, Pie,PieChart, Scatter,ScatterChart, AreaChart, ComposedChart,Tooltip,Legend,Area, Bar,BarChart, Line, XAxis, YAxis, CartesianGrid} from 'recharts';
+import { Pie,PieChart, Tooltip} from 'recharts';
 
 
 const Pie_Charts=(props)=> {
