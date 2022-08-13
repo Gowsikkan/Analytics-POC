@@ -16,7 +16,7 @@ const lineChart=(props)=> {
           <Legend />
           <Line type="monotone" dataKey={props.y} stroke="#8884d8" activeDot={{ r: 8 }} />
         </LineChart>
-)
+) 
 }
 
 export default lineChart

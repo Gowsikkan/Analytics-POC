@@ -16,7 +16,7 @@ const composedChart=(props)=> {
           }}
         >
           <CartesianGrid stroke="#f5f5f5" />
-          <XAxis dataKey={props.x} scale="band" />
+          <XAxis dataKey={props.x} />
           <YAxis />
           <Tooltip />
           <Legend />

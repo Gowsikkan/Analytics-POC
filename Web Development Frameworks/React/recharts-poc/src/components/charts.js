@@ -12,9 +12,9 @@ const charts=({data})=> {
         <Line_Chart data={data} x="Name" y="Displacement" width={500} height={300}/>
         <Area_Chart data={data} x="Origin" y="Horsepower" width={500} height={300}/>
         <Bar_Chart data={data} x="Name" y="Weight_in_lbs" width={500} height={300}/>
-        <Composed_Chart data={data} x="Year" y1="Displacement" y2="Horsepower" y3="Accleratiom" y4="Weight_in_lbs" width={500} height={300}/>
+        <Composed_Chart data={data} x="Origin" y1="Displacement" y2="Horsepower" y3="Accleratiom" y4="Weight_in_lbs" width={500} height={300}/>
         <Scatter_Chart data={data} x="Displacement" y="Horsepower" width={500} height={300}/>
-        <Pie_Charts data={data} x="Cylinders" width={500} height={300}/>
+        <Pie_Charts data={data} x="Acceleration" width={1000} height={1000}/>
     
     </div>
   )
