@@ -1,5 +1,5 @@
 import React from 'react'
-import { Scatter,ComposedChart,Tooltip,Legend,Area, Bar, Line, XAxis, YAxis, CartesianGrid} from 'recharts';
+import {ComposedChart,Tooltip,Legend,Area, Bar, Line, XAxis, YAxis, CartesianGrid} from 'recharts';
 
 const composedChart=(props)=> {
   return (
@@ -23,7 +23,6 @@ const composedChart=(props)=> {
           <Area type="monotone" dataKey={props.y1} fill="#8884d8" stroke="#8884d8" />
           <Bar dataKey={props.y2} barSize={20} fill="#413ea0" />
           <Line type="monotone" dataKey={props.y3} stroke="#ff7300" />
-          <Scatter dataKey={props.y4} fill="red" />
         </ComposedChart>
 
     </div>

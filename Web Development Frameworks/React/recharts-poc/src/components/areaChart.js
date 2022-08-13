@@ -17,10 +17,10 @@ return(
           }}
         >
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="Name" />
+          <XAxis dataKey={props.x} />
           <YAxis />
           <Tooltip />
-          <Area type="monotone" dataKey="Horsepower" stroke="#8884d8" fill="#8884d8" />
+          <Area type="monotone" dataKey={props.y} stroke="#8884d8" fill="#8884d8" />
         </AreaChart>
         
       </div>
