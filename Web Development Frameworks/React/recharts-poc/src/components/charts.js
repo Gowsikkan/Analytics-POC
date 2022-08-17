@@ -6,6 +6,7 @@ import Pie_Charts from './pieCharts';
 import Scatter_Chart from './scatterChart';
 import Composed_Chart from './composedChart';
 
+
 const charts=({data})=> {
   return (
     <div>
@@ -27,7 +28,7 @@ const charts=({data})=> {
           data={data} 
           x="Name" 
           y="Weight_in_lbs" 
-          width={500} 
+          width={1500} 
           height={300}
         />
         <Composed_Chart 
@@ -41,14 +42,14 @@ const charts=({data})=> {
         />
         <Scatter_Chart 
         data={data} 
-          x="Displacement" 
-          y="Horsepower" 
-          width={500} 
+          x="Name" 
+          y="Displacement" 
+          width={1500} 
           height={300}
         />
         <Pie_Charts 
           data={data} 
-          x="Acceleration" 
+          x="Origin" 
           width={500} 
           height={300}
         />

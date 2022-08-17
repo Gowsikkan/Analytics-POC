@@ -17,7 +17,7 @@ const barChart=(props)=> {
           }}
         >
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey={props.x} />
+          <XAxis dataKey={props.x}  type="category" allowDuplicatedCategory={false}  />
           <YAxis />
           <Tooltip />
           <Legend verticalAlign="top" wrapperStyle={{ lineHeight: '40px' }} />

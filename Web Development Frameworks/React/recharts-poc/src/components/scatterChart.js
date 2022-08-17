@@ -16,7 +16,7 @@ const scatterChart=(props)=> {
           }}
         >
           <CartesianGrid />
-          <XAxis type="number" dataKey={props.x} name="stature" unit="cm" />
+          <XAxis type="category" dataKey={props.x} allowDuplicatedCategory={false} />
           <YAxis type="number" dataKey={props.y} name="weight" unit="kg" />
           <Tooltip cursor={{ strokeDasharray: '3 3' }} />
           <Scatter name="A school" data={props.data} fill="#8884d8" />

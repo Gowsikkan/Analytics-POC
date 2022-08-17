@@ -10,7 +10,7 @@ const lineChart=(props)=> {
           data={props.data}
           margin={{ top: 1, right: 30, left: 20, bottom: 5 }}
         >
-          <XAxis dataKey={props.x} />
+          <XAxis dataKey={props.x} type="category" allowDuplicatedCategory={false}/>
           <YAxis />
           <Tooltip />
           <Legend />
