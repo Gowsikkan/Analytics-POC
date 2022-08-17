@@ -17,7 +17,7 @@ return(
           }}
         >
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey={props.x} />
+          <XAxis interval={30} type="category" allowDuplicatedCategory={false}  dataKey={props.x} />
           <YAxis />
           <Tooltip />
           <Area type="monotone" dataKey={props.y} stroke="#8884d8" fill="#8884d8" />
