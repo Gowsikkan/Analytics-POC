@@ -49,7 +49,7 @@ const charts=({data})=> {
         />
         <Pie_Charts 
           data={data} 
-          x="Origin" 
+          x="Displacement" 
           width={500} 
           height={300}
         />

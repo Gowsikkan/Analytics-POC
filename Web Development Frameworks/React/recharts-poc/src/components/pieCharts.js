@@ -9,8 +9,7 @@ const pieCharts=(props)=> {
             width={props.width}
             height={props.height} >
           <Pie
-            dataKey={props.x} type="category" allowDuplicatedCategory={false}
-            isAnimationActive={false}
+            dataKey={props.x}
             data={props.data}
             cx={240} 
             cy={150} 
