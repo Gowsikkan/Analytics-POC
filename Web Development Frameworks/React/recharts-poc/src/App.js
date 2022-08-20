@@ -24,6 +24,6 @@ function getMerchant() {
       <Charts data={data}/>
     </div>
   );
-}
+} 
 
 export default App;
