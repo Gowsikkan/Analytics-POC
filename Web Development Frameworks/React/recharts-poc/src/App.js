@@ -9,6 +9,7 @@ const [merchants, setMerchants] = useState(false);
 useEffect(() => {
 getMerchant();
 }, []);
+
 function getMerchant() {
   fetch('http://localhost:3001')
     .then(response => {
