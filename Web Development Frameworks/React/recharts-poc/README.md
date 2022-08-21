@@ -1,6 +1,16 @@
 # Getting Started with Create React App
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Installation of Node.js on Windows
+
+Step-1: Downloading the Node.js ‘.msi’ installer. [Link](https://nodejs.org/en/download/)
+Step-2: An MSI installer will be downloaded on your system. Double click the node installer and accpet all the tearms and conditions and click install.
+Step-3: After installation is complete click finish
+Step-4: To verify that node.js was properly installed or not open your command promt and test it
+```node -v ``` 
+This command prompt will print the version of the node.js installed.
+Step-5: Run the following command, to quickly update the npm
+```npm install npm –global ```
 
 ## Available Scripts
 
