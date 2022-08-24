@@ -8,6 +8,7 @@ import Composed_Chart from './composedChart';
 
 
 const charts=({data})=> {
+  
   return (
     <div>
         <Line_Chart 

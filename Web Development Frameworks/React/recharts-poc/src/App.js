@@ -1,10 +1,11 @@
 import React, {useState, useEffect} from 'react';
 import data from './components/cars.json';
 import Charts from './components/charts';
-import * as d3 from 'd3';
+import Mobile from './components/Mobile';
+
 
 const App=()=>{
-  
+
 const [merchants, setMerchants] = useState(false);
 
 useEffect(() => {getMerchant();}, []);
@@ -18,15 +19,12 @@ function getMerchant() {
       setMerchants(data);
     });
 }
-
-
-
     return (
     <div className="App" align="center">
       {merchants}
+      <Mobile/>
       <Charts data={data}/>
     </div>
   );
 } 
-
 export default App;
