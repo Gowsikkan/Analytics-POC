@@ -5,6 +5,7 @@ import data from './components/car.json'
 import Jss from './components/jss';
 
 const Chart = () => {
+	
 	return (
 		<div>
 			<Jss/>
