@@ -1,7 +1,8 @@
 import React ,{useState, useEffect, }from 'react'
-import Mobile from './Mobile';
+import MobileInput from './mobileInput';
 
-const Emulator=()=> {
+
+const EmulatorModel=()=> {
     const intialValues = {
         height: "",
         width: "",
@@ -16,40 +17,53 @@ const Emulator=()=> {
         });
       };
     
-    useEffect(() => {
-      Mobile(values.height,values.width);
-      });
-    
     const handleReset = () => {
         this.setState({
           intialValues: 0
         });
       };
+    const SubmitEve =(e)=>{
+      e.preventDefault();
+      MobileInput(values.height,values.width)
+    }
     
   return (
-    <div>
+    <div >
+    <div className='header'>
+    <h1>Mobile Emulator</h1>
+    </div>
     <form>
-    <input
+      Height
+    <input 
       value={values.height}
-      onChange={handleInputChange}
+      type="Number"
       name="height"
       label="Height"
+      onChange={handleInputChange}
+      placeholder="Enter height"
     />
+    Width
     <input
       value={values.width}
-      onChange={handleInputChange}
       name="width"
+      type="Number"
       label="Width"
+      onChange={handleInputChange}
+      placeholder="Enter height"
     />
     <button onClick={handleReset}>
       Reset
     </button>
-  </form>
-  <div>
-    <Mobile widths={200} heights={879}/>
+  <button onClick={SubmitEve}>
+  Submit
+    </button>
+    </form>
+  {values.height>0? 
+            <MobileInput/>
+          :<p></p>
+      }
     </div>
-</div>
   )
 }
 
-export default Emulator
+export default EmulatorModel
