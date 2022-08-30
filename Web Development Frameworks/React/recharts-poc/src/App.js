@@ -2,7 +2,7 @@ import React from 'react';
 import data from './components/cars.json';
 import Charts from './components/charts';
 import {BrowserRouter as Router,Route,Routes} from "react-router-dom";
-import Emulator from './components/Emulator';
+import Emulator from './components/EmulatorModel';
 import Home from './Home';
 
 export default function App() {
