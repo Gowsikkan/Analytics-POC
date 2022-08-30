@@ -1,30 +1,16 @@
-
 import React from "react";
-// importing Link from react-router-dom to navigate to 
-// different end points.
 import { Link } from "react-router-dom";
-  
+import "./App.css"
+
 const Home = () => {
   return (
-    <div>
-      <h1>Home Page</h1>
-      <br />
-      <ul>
-        <li>
-          {/* Endpoint to route to Home component */}
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          {/* Endpoint to route to About component */}
-          <Link to="/dashboard">About</Link>
-        </li>
-        <li>
-          {/* Endpoint to route to Contact Us component */}
-          <Link to="/emulator">Contact Us</Link>
-        </li>
-      </ul>
+    <div class="navbar">
+    <div class="header">
+    <h1> ANALYTICS POC</h1>
+    </div>
+      <button> <Link to="/dashboard">Dashboard</Link></button>
+      <button> <Link to="/emulator">Mobile Emulator</Link></button>
     </div>
   );
 };
-  
 export default Home;
