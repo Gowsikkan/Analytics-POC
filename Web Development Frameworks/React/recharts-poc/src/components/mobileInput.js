@@ -1,9 +1,9 @@
 import * as d3 from 'd3';
 
 
-const mobileInput=(height,width)=> {
+const mobileInput=(height,width,points)=> {
   
-var dataset1 = [[3,4],[3,5]]
+var dataset1 = points
 var cls=20
 var width1=width-cls
 var height1=height-cls
