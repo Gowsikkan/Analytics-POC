@@ -1,15 +1,25 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import {useNavigate} from 'react-router-dom';
 import "./App.css"
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  const navigateToDashboard = () => {
+    navigate('/dashboard');
+  }
+  
+  const navigateToEmulator = () => {
+    navigate('/emulator');
+  }
+
   return (
     <div class="navbar">
     <div class="header">
     <h1> ANALYTICS POC</h1>
     </div>
-      <button> <Link to="/dashboard">Dashboard</Link></button>
-      <button> <Link to="/emulator">Mobile Emulator</Link></button>
+      <button onClick={navigateToDashboard} className="button">Dashboard</button>
+      <button onClick={navigateToEmulator} className="button">Mobile Emulator</button>
     </div>
   );
 };

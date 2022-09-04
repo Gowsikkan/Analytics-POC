@@ -37,7 +37,6 @@
   }
 }
 
-
 .header {
   padding: 80px;
   text-align: center;
@@ -56,4 +55,16 @@ h1 {
   font-weight: bold;
   color: #fff;
   font-size: 32px;
+}
+.button {
+  background-color: #4dAFda;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin: 1px 2px;
+  cursor: pointer;
 }

@@ -1,5 +1,5 @@
-import React ,{useState, useEffect, }from 'react'
-import MobileInput from './mobileInput';
+import React ,{useState}from 'react'
+import MobileInput from './mobileInput'
 
 
 const EmulatorModel=()=> {
@@ -7,7 +7,7 @@ const EmulatorModel=()=> {
         height: "",
         width: "",
       };
-      const isLoggedIn= false 
+      //const isLoggedIn= false 
       const points =[[90, 20], [20, 100], [66, 44], [53, 80], [24, 182], [80, 72], [10, 76], [33, 150], [100, 15]];
       const [values, setValues] = useState(intialValues);
     
@@ -17,7 +17,7 @@ const EmulatorModel=()=> {
           ...values,
           [name]: value,
         });
-        isLoggedIn=true
+        //isLoggedIn=true
       };
     
     const handleReset = () => {
@@ -28,8 +28,7 @@ const EmulatorModel=()=> {
     const SubmitEve =(e)=>{
       e.preventDefault();
       MobileInput(values.height,values.width,points)
-      isLoggedIn=false
-      console.log(isLoggedIn)
+      //isLoggedIn=false
     }
     
   return (
@@ -56,15 +55,15 @@ const EmulatorModel=()=> {
       onChange={handleInputChange}
       placeholder="Enter height"
     />
-    <button onClick={handleReset}>
+    <button class="button" onClick={handleReset}>
       Reset
     </button>
-  <button onClick={SubmitEve}>
+  <button class="button" onClick={SubmitEve}>
   Submit
     </button>
     </form>
     {values.height>0 && values.width>0?
-    //values.isLoggedIn?
+    //isLoggedIn?
     <MobileInput/>:<p></p>}
     </div>
   )
