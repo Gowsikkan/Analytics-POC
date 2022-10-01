@@ -7,12 +7,12 @@ import Home from './Home';
 
 export default function App() {
   return (
-    <Router>
+    <Router>  
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/dashboard" element={<Charts data={data}/>} />
         <Route path="/emulator" element={<Emulator/>} />
       </Routes>
     </Router>
-  );
+  )
 }

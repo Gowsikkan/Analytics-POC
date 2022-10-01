@@ -1,8 +1,3 @@
-from calendar import month
-from ctypes import alignment
-from distutils.log import debug
-from urllib.parse import MAX_CACHE_SIZE
-from click import style
 import dash
 import dash_html_components as html
 from numpy import average
@@ -50,6 +45,7 @@ def update_bar_chart(day): # replace with your own data source
 
 
 df1=df.query("Country=='Canada'")
+
 fig2 = px.scatter(df, x ='  Sales ', y =' Product ',size=' Profit ',color="Segment",size_max=90)
 
 fig3 = px.histogram(df, x =' Month Name ',y='  Sales ')
@@ -76,6 +72,7 @@ fig8 = go.Figure(go.Indicator(
 fig8.add_trace(go.Scatter(y = df['  Sales ']))
 fig8.update_layout(xaxis = {'range': [0, 62]})
 
+
 fig9 = go.Figure(go.Indicator(
     mode = "number+delta",
     value = average(df[' Profit ']),
@@ -89,8 +86,8 @@ fig9.update_layout(xaxis = {'range': [0, 62]})
 fig10 = px.sunburst(df, path=['Segment','Country'])
 fig10.update_layout(
     autosize=False,
-    width=200,
-    height= 200,
+    width=700,
+    height= 700,
 )
 
 
@@ -149,4 +146,4 @@ app.layout = html.Div([
 ])
 
 if __name__ == '__main__': 
-    app.run_server(debug=True, port=8051)
+    app.run_server(debug=True)

@@ -33,9 +33,7 @@ const EmulatorModel=()=> {
     
   return (
     <div >
-    <div className='header'>
     <h1>Mobile Emulator</h1>
-    </div>
     <form>
       Height
     <input 
@@ -55,10 +53,10 @@ const EmulatorModel=()=> {
       onChange={handleInputChange}
       placeholder="Enter height"
     />
-    <button class="button" onClick={handleReset}>
+    <button onClick={handleReset}>
       Reset
     </button>
-  <button class="button" onClick={SubmitEve}>
+  <button onClick={SubmitEve}>
   Submit
     </button>
     </form>
